@@ -40,7 +40,6 @@ const Products = () => {
 
   return (
     <div>
-      <ToastContainer />
       <div className="mb-10">
         <h1 className="text-3xl font-bold mb-8 justify-center">
           Product List Page

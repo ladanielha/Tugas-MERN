@@ -40,6 +40,7 @@ const DetailsProduct = () => {
       addToCart(product, quantity); // Pass quantity to addToCart function
       toast.success(`${quantity} Item(s) added to cart`, {
         position: "bottom-center",
+        autoClose: 2000,
       });
     } else {
       toast.error("You Need to Login ", {
@@ -50,7 +51,6 @@ const DetailsProduct = () => {
 
   return (
     <div>
-      <ToastContainer />
       <div className="font-[sans-serif]">
         <div className="p-6 lg:max-w-7xl max-w-2xl max-lg:mx-auto">
           {products && (
@@ -92,9 +92,7 @@ const DetailsProduct = () => {
                 </div>
                 <hr className="my-8" />
                 <div className="flex flex-wrap gap-4">
-                  <h3 className="text-lg font-bold text-gray-800">
-                    Quantity 
-                  </h3>
+                  <h3 className="text-lg font-bold text-gray-800">Quantity</h3>
                   <input
                     type="number"
                     min="1"

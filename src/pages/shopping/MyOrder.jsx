@@ -33,7 +33,6 @@ const MyCart = () => {
 
   return (
     <div>
-      <ToastContainer />
       <div className="font-[sans-serif] bg-gray-50">
         <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-4 h-full">
           <div className="bg-orange-300 lg:h-screen lg:sticky lg:top-0">

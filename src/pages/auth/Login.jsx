@@ -22,6 +22,9 @@ const Login = () => {
 
     try {
       await login(username, password);
+      toast.success("Login Success",{
+        position: "bottom-center"
+      });
       navigate(`/`, { replace: true });
     } catch (error) {
       toast.error("Login Failed. invalid credentials .",{
@@ -80,7 +83,7 @@ const Login = () => {
         </div>
       </form>
       <p> username: mor_2314 - password: 83r5^_</p>
-      <ToastContainer />
+      
     </div>
   );
 };

@@ -54,7 +54,6 @@ const MyCart = () => {
 
   return (
     <div>
-      <ToastContainer />
       <div className="font-[sans-serif] bg-white py-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-extrabold text-[#333]">Shopping Cart</h2>

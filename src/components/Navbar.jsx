@@ -16,11 +16,13 @@ const Navbar = () => {
   const handleLogout = () => {
     console.log("clik");
     logout();
+    toast.success("Logout Success",{
+      position: "bottom-center"
+    });
     navigate(`/`);
   };
 
   const handleClick = () => {
-    
     setIsOpen(true);
   };
 

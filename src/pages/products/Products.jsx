@@ -9,8 +9,9 @@ import { Link } from "react-router-dom";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
-  const { addToCart } = useCart();
   const { user } = useAuth();
+
+
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -36,17 +37,9 @@ const Products = () => {
     }
   };
 
-  const handleAddToCart = (product) => {
-    console.log(product);
-    addToCart(product); 
-    toast.success("1 Items added to cart", {
-      position: "bottom-center"
-    });
-  };
 
   return (
     <div>
-      <ToastContainer />
       <div className="font-[sans-serif]">
         <div className="p-4 mx-auto lg:max-w-7xl sm:max-w-full">
           <h2 className="text-4xl font-extrabold text-gray-800 mb-12">
