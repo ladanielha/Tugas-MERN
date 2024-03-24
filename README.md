@@ -1,6 +1,14 @@
 # React + Vite
+# Demo : tugas-04-mini-shop-context.vercel.app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Getting Started
+To get started with My Awesome Application, follow these steps:
+
+1 Clone the repository: git clone https://github.com/ladanielha/Tugas_04_MiniShop
+2 Navigate to the project directory: cd Tugas_04_MiniShop
+3 Install dependencies: npm install o
+4 Start the development server: npm run dev
+5 Open your browser and go to http://localhost:5173 to view the app.
 
 Currently, two official plugins are available:
 
