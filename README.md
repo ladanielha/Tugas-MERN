@@ -2,7 +2,7 @@
 
 # React + Vite Mini Shop
 Welcome to the React + Vite Mini Shop! This mini shop application is built using React and Vite.
-
+Ui From : https://readymadeui.com/
 ## Demo
 
 https://tugas-04-mini-shop-context.vercel.app/
