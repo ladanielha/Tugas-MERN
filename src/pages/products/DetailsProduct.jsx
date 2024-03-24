@@ -5,7 +5,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useAuth } from "../../context/AuthContext";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 
 const DetailsProduct = () => {
   const { id } = useParams();
@@ -13,7 +13,7 @@ const DetailsProduct = () => {
   const { addToCart } = useCart();
   const { user } = useAuth();
   const [quantity, setQuantity] = useState(1); // Default quantity is 1
-
+  const navigate = useNavigate
   useEffect(() => {
     const fetchProduct = async () => {
       try {
@@ -37,11 +37,13 @@ const DetailsProduct = () => {
 
   const handleAddToCart = (product, quantity) => {
     if (user) {
-      addToCart(product, quantity); // Pass quantity to addToCart function
+      addToCart(product, quantity); 
+
       toast.success(`${quantity} Item(s) added to cart`, {
         position: "bottom-center",
         autoClose: 2000,
       });
+        navigate("/login")
     } else {
       toast.error("You Need to Login ", {
         position: "bottom-center",
