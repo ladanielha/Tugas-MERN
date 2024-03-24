@@ -1,14 +1,28 @@
 # React + Vite
-# Demo : tugas-04-mini-shop-context.vercel.app
 
-Getting Started
-To get started with My Awesome Application, follow these steps:
+# React + Vite Mini Shop
+Welcome to the React + Vite Mini Shop! This mini shop application is built using React and Vite.
 
-1 Clone the repository: git clone https://github.com/ladanielha/Tugas_04_MiniShop
-2 Navigate to the project directory: cd Tugas_04_MiniShop
-3 Install dependencies: npm install o
-4 Start the development server: npm run dev
-5 Open your browser and go to http://localhost:5173 to view the app.
+## Demo
+
+https://tugas-04-mini-shop-context.vercel.app/
+
+
+## Installation
+
+Install my-project with npm
+
+```bash
+  Getting Started
+To get started with the React + Vite Mini Shop, follow these steps:
+
+Clone : git clone https://github.com/ladanielha/Tugas_04_MiniShop
+Navigate directory : cd Tugas_04_MiniShop
+Install dependencies: npm install
+Start the development server: npm run dev
+Open your browser and go to http://localhost:5173 to view the app.
+```
+    
 
 Currently, two official plugins are available:
 
